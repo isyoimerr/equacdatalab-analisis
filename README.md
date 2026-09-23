@@ -1,4 +1,3 @@
-# EQUAC DATALAB
 ## Análisis del Abuso en Colombia: Un Llamado a la Acción
 
 ![Badge](https://img.shields.io/badge/Status-Activo-brightgreen) ![Badge](https://img.shields.io/badge/Python-3.8+-blue) ![Badge](https://img.shields.io/badge/License-Open%20Source-green)
@@ -90,8 +89,6 @@ Procesamiento y Limpieza de Datos
 
 ### Alberto Salcedo Buitrago
 Visualización de Datos
-
-**Estrategia:** EQUAC DATALAB
 
 **Asignatura:** Introducción a la Ingeniería de Datos e Inteligencia Artificial
 
