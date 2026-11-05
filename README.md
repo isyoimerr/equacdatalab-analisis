@@ -1,151 +1,45 @@
-## Análisis del Abuso en Colombia: Un Llamado a la Acción
+# EquacDataLab — Análisis de abuso en Colombia
 
-![Badge](https://img.shields.io/badge/Status-Activo-brightgreen) ![Badge](https://img.shields.io/badge/Python-3.8+-blue) ![Badge](https://img.shields.io/badge/License-Open%20Source-green)
+Análisis exploratorio de datos públicos sobre presuntos casos de abuso registrados en Colombia. El proyecto fue desarrollado como parte de la asignatura de Introducción a la Ingeniería de Datos e Inteligencia Artificial en la Universidad Simón Bolívar.
 
----
+## Pregunta de análisis
 
-## Objetivo del Proyecto
+¿Qué patrones geográficos, temporales y demográficos pueden observarse en los registros públicos disponibles?
 
-Realizar un análisis exploratorio de datos (EDA) sobre los casos de presunto abuso registrados en Colombia, utilizando datos públicos del portal datos.gov.co, para:
-
-- Identificar patrones y tendencias geográficas
-- Analizar variaciones temporales y demográficas
-- Contribuir a políticas de protección y prevención
-- Visibilizar disparidades en el acceso a justicia
-
----
-
-## Hallazgos Principales
-
-| Hallazgo | Resultado |
-|----------|-----------|
-| Reducción de casos | 80% (2023 → 2024) |
-| Casos 2023 | ~1000 registros |
-| Casos 2024 | ~200 registros |
-| Departamentos analizados | 15+ regiones |
-| Región crítica | Atlántico (Barranquilla) |
-| Mayor incidencia | Mujeres adultas |
-
-### Departamentos Estudiados
-
-**Atlántico**: Concentración en Barranquilla, predominio de acceso carnal violento y acto sexual violento. Mayor incidencia en mujeres adultas.
-
-**Cundinamarca**: Bogotá lidera reportes por alta densidad poblacional y mejor capacidad institucional de denuncia. Zona receptora de población migrante.
-
-**Magdalena**: Disparidades significativas entre municipios. Brecha importante en acceso a justicia. Posible subregistro en zonas rurales.
-
-### Análisis Temporal
-
-- Marzo: Mes con más reportes (regreso a clases, reactivación de campañas)
-- Diciembre: Menos casos (cierre institucional, festividades)
-- Mayo-Octubre: Estabilidad relativa (53-80 casos/mes)
-- Enero: Aumento post-festividades
-
----
-
-## Stack Tecnológico
-
-| Herramienta | Propósito |
-|------------|-----------|
-| Python | Lenguaje de programación principal |
-| Pandas | Manipulación y análisis de DataFrames |
-| NumPy | Cálculos numéricos y operaciones matriciales |
-| Matplotlib | Visualizaciones estáticas |
-| Seaborn | Gráficos estadísticos avanzados |
-| Plotly | Gráficos interactivos y dinámicos |
-| Google Colab | Entorno de desarrollo en la nube |
-| datos.gov.co | Fuente de datos abiertos de Colombia |
-
----
-
-## Estructura del Proyecto
-
-```
-equacdatalab-analisis/
-├── README.md                    # Este archivo
-├── analisisabu.py              # Script principal de análisis
-├── datos/                       # Dataset (descargado de datos.gov.co)
-├── graficos/                    # Visualizaciones generadas
-└── documentacion/               # Guías y reportes
-```
-
----
-
-## Enlaces Importantes
-
-[Ver Análisis Completo en Google Colab](https://colab.research.google.com/drive/11gLcUEYLB_a3wPMQUkYs6oH9E-fYf57v?usp=sharing)
-
-[Síguenos en Instagram @equacdatalab](https://instagram.com/equacdatalab)
-
----
-
-## Equipo Investigador
-
-### Santiago Flórez Henríquez
-Análisis Exploratorio de Datos
-
-### Yoimer Ospino Zambrano
-Procesamiento y Limpieza de Datos
-
-### Alberto Salcedo Buitrago
-Visualización de Datos
-
-**Asignatura:** Introducción a la Ingeniería de Datos e Inteligencia Artificial
-
-**Institución:** Universidad Simón Bolívar
-
-**Grupo:** 1A | Primer Parcial | 21/03/2025
-
----
-
-## Universidad
-
-Universidad Simón Bolívar
-Ingeniería de Datos e Inteligencia Artificial
-Barranquilla, Colombia
-
----
+El objetivo es practicar un flujo reproducible de análisis: obtención, limpieza, exploración, visualización e interpretación de datos.
 
 ## Metodología
 
-1. Carga de datos desde API pública (datos.gov.co)
-2. Limpieza y preparación de datos
-3. Análisis exploratorio (EDA) para identificar patrones
-4. Visualización e interpretación de resultados
-5. Conclusiones y recomendaciones basadas en datos
+1. Obtención de datos desde una fuente pública de datos.gov.co.
+2. Limpieza y preparación de los registros.
+3. Análisis exploratorio por ubicación, periodo y variables demográficas.
+4. Creación de visualizaciones.
+5. Interpretación de resultados y documentación de limitaciones.
 
----
+Los resultados describen los registros disponibles; no representan necesariamente la incidencia real. Pueden existir subregistro, cambios en la calidad de los datos y diferencias en la capacidad de denuncia. Las asociaciones observadas no deben interpretarse como relaciones causales.
 
-## Recomendaciones
+## Tecnologías
 
-1. Fortalecer redes locales - Capacitar líderes comunitarios y organizaciones
-2. Campañas de sensibilización - Derechos humanos en zonas rurales
-3. Mejorar acceso a justicia - Centros especializados en violencia sexual
-4. Plataformas de denuncia anónima - Reducir barreras de miedo
-5. Educación en prevención - Programas en colegios y comunidades
+Python · Pandas · NumPy · Matplotlib · Seaborn · Plotly · Google Colab
 
----
+## Reproducir el análisis
 
-## Conclusión
+El análisis completo está disponible en [Google Colab](https://colab.research.google.com/drive/11gLcUEYLB_a3wPMQUkYs6oH9E-fYf57v?usp=sharing).
 
-Los datos revelan disparidades importantes en el acceso a justicia y protección. Es necesario un esfuerzo coordinado entre autoridades, fundaciones y comunidades para garantizar que todas las víctimas, sin importar dónde vivan, reciban el apoyo que merecen.
+Para reproducirlo:
 
-Los datos son poder. Usémoslos para proteger a quienes más lo necesitan.
+1. Abre el notebook en Google Colab.
+2. Ejecuta las celdas en orden.
+3. Revisa la fuente y el periodo de los datos antes de interpretar los resultados.
 
----
+## Equipo
 
-## Contáctanos
+- Santiago Flórez Henríquez — análisis exploratorio
+- Yoimer Ospino Zambrano — procesamiento y limpieza
+- Alberto Salcedo Buitrago — visualización
 
-Envíanos un mensaje a @equacdatalab si tienes dudas o quieres aprender más sobre análisis de datos.
+Universidad Simón Bolívar · Ingeniería de Datos e Inteligencia Artificial · 2025
 
----
+## Estado
 
-## Licencia
-
-Este proyecto es de código abierto y está disponible bajo la licencia MIT.
-
----
-
-Última actualización: Marzo 2025
-Status: Activo
-Contribuciones: Bienvenidas
+Proyecto académico. Los datos provienen de una fuente pública y deben consultarse junto con su documentación y fecha de actualización.
